@@ -66,3 +66,29 @@ header {
   color: green;
   font-weight: bold;
 }
+
+.search-box {
+  position: relative;
+  width: 250px;
+}
+
+.search-box i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* 👈 key fix */
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #3498db;
+}
